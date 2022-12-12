@@ -1,0 +1,88 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_request_packaging_qty
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-12 03:06+0000\n"
+"PO-Revision-Date: 2022-05-12 00:13-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model.fields,field_description:purchase_request_packaging_qty.field_purchase_request_line__date_planned
+msgid "Delivery Date"
+msgstr "Data planejada"
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model.fields,help:purchase_request_packaging_qty.field_purchase_request_line__date_planned
+msgid ""
+"Delivery date expected from vendor. This date respectively defaults to "
+"vendor pricelist lead time then today's date."
+msgstr ""
+"Data de entrega esperada do fornecedor. Esta data remete para o tempo de "
+"entrega da lista de preços do fornecedor em vez da data de hoje."
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model.fields,field_description:purchase_request_packaging_qty.field_purchase_request_line__display_name
+msgid "Display Name"
+msgstr "Nome"
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model.fields,field_description:purchase_request_packaging_qty.field_purchase_request_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model.fields,field_description:purchase_request_packaging_qty.field_purchase_request_line____last_update
+msgid "Last Modified on"
+msgstr "Última Modificação em"
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model.fields,field_description:purchase_request_packaging_qty.field_purchase_request_line__product_packaging
+msgid "Package"
+msgstr "Pacote"
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model.fields,field_description:purchase_request_packaging_qty.field_purchase_request_line__product_packaging_qty
+msgid "Package quantity"
+msgstr "Quantidade do pacote"
+
+#. module: purchase_request_packaging_qty
+#: code:addons/purchase_request_packaging_qty/models/purchase_request_line.py:0
+#, python-format
+msgid "Please select a packaging with a quantity bigger than 0"
+msgstr "Selecione uma embalagem com uma quantidade maior que 0"
+
+#. module: purchase_request_packaging_qty
+#: model:ir.model,name:purchase_request_packaging_qty.model_purchase_request_line
+msgid "Purchase Request Line"
+msgstr "Linha de Requisição de Compra"
+
+#. module: purchase_request_packaging_qty
+#: code:addons/purchase_request_packaging_qty/models/purchase_request_line.py:0
+#, python-format
+msgid "This product is packaged by %.2f %s. You should sell %.2f %s."
+msgstr "Este produto é embalado por %.2f %s. Você pode solicitar%.2f %s."
+
+#. module: purchase_request_packaging_qty
+#: code:addons/purchase_request_packaging_qty/models/purchase_request_line.py:0
+#, python-format
+msgid "Warning"
+msgstr "Aviso"
+
+#. module: purchase_request_packaging_qty
+#: code:addons/purchase_request_packaging_qty/models/purchase_request_line.py:0
+#, python-format
+msgid "You must define a package before setting a quantity of said package."
+msgstr ""
+"Você deve definir um pacote antes de definir uma quantidade do referido "
+"pacote."

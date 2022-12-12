@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_purchase_request_form_inherit" model="ir.ui.view">
+        <field name="name">purchase.request.form.inherit</field>
+        <field name="model">purchase.request</field>
+        <field
+            name="inherit_id"
+            ref="purchase_request.view_purchase_request_form"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//group[@name='main']/group/div"
+                position="after"
+            >
+                <field
+                    name="product_packaging"
+                    attrs="{'invisible': [('product_id', '=', False)]}"
+                    context="{'default_product_id': product_id, 'tree_view_ref':'product.product_packaging_tree_view', 'form_view_ref':'product.product_packaging_form_view'}"
+                    domain="[('product_id','=',product_id)]"
+                    groups="product.group_stock_packaging"
+                    options="{'no_create': True}"
+                />
+                <field
+                    name="product_packaging_qty"
+                    groups="product.group_stock_packaging"
+                    attrs="{'invisible': [('product_packaging', '=', False)]}"
+                />
+                <field name="date_planned" />
+            </xpath>
+            <xpath
+                expr="//field[@name='line_ids']/tree/field[@name='product_qty']"
+                position="after"
+            >
+                <field
+                    name="product_packaging"
+                    attrs="{'invisible': [('product_id', '=', False)]}"
+                    context="{'default_product_id': product_id, 'tree_view_ref':'product.product_packaging_tree_view', 'form_view_ref':'product.product_packaging_form_view'}"
+                    domain="[('product_id','=',product_id)]"
+                    groups="product.group_stock_packaging"
+                    optional="show"
+                />
+                <field
+                    name="product_packaging_qty"
+                    groups="product.group_stock_packaging"
+                    attrs="{'invisible': [('product_packaging', '=', False)]}"
+                />
+                <field name="date_planned" />
+            </xpath>
+        </field>
+    </record>
+</odoo>
